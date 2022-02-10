@@ -22,8 +22,6 @@ const eqArrays = function (array1, array2) {
   return true;
 };
 
-// Returns true if both objects have identical keys with identical values.
-// Otherwise you get back a big fat false!
 const eqObjects = function (object1, object2) {
 
   const keyArray1 = Object.keys(object1);
@@ -57,23 +55,3 @@ const assertObjectsEqual = function (object1, object2) {
     return console.log(`✅ Assertion Passed: [${inspect(object1)}] === [${inspect(object2)}]`);
   } else return console.log(`🛑 Assertion Failed: [${inspect(object1)}] !== [${inspect(object2)}]`);
 }
-
-// TESTS
-
-console.log('-----TEST ONE-----');
-const ab = { a: "1", b: "2" };
-const ba = { b: "2", a: "1" };
-assertObjectsEqual(ab, ba); // => true
-
-console.log('-----TEST TWO-----');
-const abc = { a: "1", b: "2", c: "3" };
-assertObjectsEqual(ab, abc); // => false
-
-console.log('-----TEST THREE-----');
-const cd = { c: "1", d: ["2", 3] };
-const dc = { d: ["2", 3], c: "1" };
-assertObjectsEqual(cd, dc); // => true
-
-console.log('-----TEST FOUR-----');
-const cd2 = { c: "1", d: ["2", 3, 4] };
-assertObjectsEqual(cd, cd2); // => false
