@@ -1,0 +1,33 @@
+{
+  "name": "lotide",
+  "version": "1.0.0",
+  "description": "A clone of the lodash js library to practice creating various types of functions in js as well as using testing tools and npm.",
+  "main": "",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CJM1994/lotide.git"
+  },
+  "keywords": [
+    "lotide",
+    "lodash",
+    "npm",
+    "functions",
+    "library"
+  ],
+  "author": "Connor Mullin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CJM1994/lotide/issues"
+  },
+  "homepage": "https://github.com/CJM1994/lotide#readme",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^9.2.0"
+  }
+}
