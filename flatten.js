@@ -1,4 +1,4 @@
-const eqArrays = function(array1, array2) {
+const eqArrays = function (array1, array2) {
   if (array1.length !== array2.length) return false;
   for (let i = 0; i < array1.length; i++) {
     if (array1[i] !== array2[i]) return false;
@@ -6,13 +6,13 @@ const eqArrays = function(array1, array2) {
   return true;
 };
 
-const assertArraysEqual = function(array1, array2) {
+const assertArraysEqual = function (array1, array2) {
   if (eqArrays(array1, array2)) {
     console.log('✅ Arrays match');
   } else console.log('🛑 Arrays do not match');
 };
 
-const flatten = function(array) {
+const flatten = function (array) {
   const flattenedArray = [];
   for (const element of array) {
     if (Array.isArray(element)) {
@@ -23,6 +23,8 @@ const flatten = function(array) {
   }
   return flattenedArray;
 };
+
+module.exports = flatten;
 
 // TEST
 const unflattened = [1, 2, [3, 4], 5, [6]];

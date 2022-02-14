@@ -46,6 +46,8 @@ const eqObjects = function (object1, object2) {
 
 }
 
+module.exports = eqObjects;
+
 // TESTS
 
 console.log('-----TEST ONE-----');

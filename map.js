@@ -7,3 +7,5 @@ const map = function (arrayToMap, callbackFunction) {
   }
   return results;
 }
+
+module.exports = map;

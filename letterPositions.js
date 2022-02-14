@@ -12,7 +12,7 @@ const assertArraysEqual = function (array1, array2) {
   } else console.log('🛑 Arrays do not match');
 };
 
-const letterPosition = function (string) {
+const letterPositions = function (string) {
   const results = {};
   string = string.split(' ').join('');
   for (let i = 0; i < string.length; i++) {
@@ -23,6 +23,7 @@ const letterPosition = function (string) {
   return results;
 };
 
+module.exports = letterPositions;
 
 // TESTING
 let test = {
@@ -38,5 +39,5 @@ let test = {
   n: [11]
 }
 
-assertArraysEqual((letterPosition('hello'))['l'], [2, 3]);
-assertArraysEqual((letterPosition('lighthouse in the house'))['h'], test.h);
+assertArraysEqual((letterPositions('hello'))['l'], [2, 3]);
+assertArraysEqual((letterPositions('lighthouse in the house'))['h'], test.h);

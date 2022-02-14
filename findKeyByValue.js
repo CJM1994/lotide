@@ -1,3 +1,5 @@
+const findKey = require("./findKey");
+
 const assertEqual = function (actual, expected) {
   if (actual === expected) {
     return console.log(`✅ Assertion Passed: [${actual}] === [${expected}]`);
@@ -10,6 +12,8 @@ const findKeyByValue = function (object, value) {
     if (object[key] === value) return key;
   }
 }
+
+module.exports = findKeyByValue;
 
 //TESTS
 const bestTVShowsByGenre = {
