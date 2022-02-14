@@ -7,7 +7,7 @@ describe('#TAIL', () => {
     assert.deepEqual(tail([1, 2, 3, 4, 5]), [2, 3, 4, 5]);
   })
 
-  it('["Hello", "Lighthouse", "Labs"] === ["Lighthouse", "Labs"]', () => {
+  it('tail(["Hello", "Lighthouse", "Labs"]) === ["Lighthouse", "Labs"]', () => {
     assert.deepEqual(tail(["Hello", "Lighthouse", "Labs"]), ["Lighthouse", "Labs"]);
   })
 
