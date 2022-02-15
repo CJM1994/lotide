@@ -1,8 +1,21 @@
-const assertEqual = require('../assertEqual');
+const assert = require('chai').assert;
 const eqArrays = require('../eqArrays');
 
-// assertEqual(eqArrays([], []), true); // => should PASS
-// assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
-// assertEqual(eqArrays([1, 2, 3, 4], [1, 2, 3]), true); // => should FAIL
-// assertEqual(eqArrays([1, 'f', 3], [1, 2, 3]), true); // => should FAIL
-// assertEqual(eqArrays([1, 2, 8], [1, 2, 3]), true); // => should FAIL
+describe('EQ ARRAYS TEST', () => {
+  it('Two empty arrays should return true', () => {
+    assert.strictEqual(eqArrays([], []), true);
+  })
+
+  it('[1, 2, 3], [1, 2, 3] should return true', () => {
+    assert.strictEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
+  })
+
+  it('[1, 2, 3, 4], [1, 2, 3] should return false', () => {
+    assert.strictEqual(eqArrays([1, 2, 3, 4], [1, 2, 3]), false);
+  })
+
+  it('[1, "f", 3], [1, 2, 3] should return false', () => {
+    assert.strictEqual(eqArrays([1, 'f', 3], [1, 2, 3]), false);
+  })
+
+})
