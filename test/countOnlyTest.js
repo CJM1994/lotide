@@ -2,9 +2,7 @@ const countOnly = require('../countOnly');
 assert = require('chai').assert;
 
 describe('#COUNTONLY', () => {
-
   it('Should count Jason x1, and Fang x2', () => {
-
     const firstNames = [
       "Karl",
       "Salima",
