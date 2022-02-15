@@ -29,9 +29,6 @@ The following functions are currently implemented:
 * `head(array)`: Returns the item in the first index of an array
 * `middle(array)`: Returns the middle value(s) of an array, returns an empty array if two or less values
 * `tail(array)`: Returns the tail of an array
-* `assertArraysEqual(array1, array2)`: Asserts if two arrays are equal, primitive values only
-* `assertEqual(x, x)`: Asserts if two primitive values are strictly equal
-* `assertObjectsEqual(object1, object2)`: Asserts if two objects are equal, primitive values only in objects
 * `countLetters(string)`: Returns an object with a count of each letter in a string
 * `countOnly(array, {string/integer : boolean})`: Counts instances of primitive values taken from the key of the object argument, will count keys given the value of true and skip keys given the value false
 * `eqArrays(array1, array2)`: Compares each item in two arrays strictly at each index and returns true if they match and false if an index does not match
