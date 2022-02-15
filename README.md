@@ -31,15 +31,15 @@ The following functions are currently implemented:
 * `tail(array)`: Returns the tail of an array
 * `assertArraysEqual(array1, array2)`: Asserts if two arrays are equal, primitive values only
 * `assertEqual(x, x)`: Asserts if two primitive values are strictly equal
-* `assertObjectsEqual(Object1, Object2)`: Asserts if two objects are equal, primitive values only in objects
+* `assertObjectsEqual(object1, object2)`: Asserts if two objects are equal, primitive values only in objects
 * `countLetters(string)`: Returns an object with a count of each letter in a string
-* `countOnly(...)`: description
-* `eqArrays(...)`: description
-* `eqObjects(...)`: description
-* `findKey(...)`: description
-* `findKeyByValue(...)`: description
-* `flatten(...)`: description
-* `letterPositions(...)`: description
-* `map(...)`: description
-* `takeUntil(...)`: description
-* `without(...)`: description
+* `countOnly(array, {string/integer : boolean})`: Counts instances of primitive values taken from the key of the object argument, will count keys given the value of true and skip keys given the value false
+* `eqArrays(array1, array2)`: Compares each item in two arrays strictly at each index and returns true if they match and false if an index does not match
+* `eqObjects(object1, object2)`: Compares two objects at each key, if any keys do not strictly match or if number of keys differ returns false. If they match returns true, checks arrays withing objects with assertArraysEqual
+* `findKey(object, callback)`: Calls a function on each key in an object
+* `findKeyByValue(object, value)`: Returns the first key in an object with a given value
+* `flatten(array)`: Flattens an array that contains arrays, only goes 1 array deep
+* `letterPositions(string)`: Returns an object with each character in a string as the key and an array with all indexs of that character as the value
+* `map(array, callback)`: Calls a callback function on each element in an array and returns a new array with the result
+* `takeUntil(array, callback)`: Calls a function on each element in an array until the callback returns true, will return the first element where a callback returns true
+* `without(array1, array2)`: Takes array1 as an argument and returns a new array with all elements contained in array2 removed
