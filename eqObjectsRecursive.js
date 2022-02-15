@@ -1,6 +1,6 @@
 const eqArrays = require('./eqArrays');
 
-const eqObjects = function (object1, object2) {
+const eqObjectsRecursive = function (object1, object2) {
 
   const keyArray1 = Object.keys(object1);
   const keyArray2 = Object.keys(object2);
@@ -18,4 +18,4 @@ const eqObjects = function (object1, object2) {
 
 }
 
-module.exports = eqObjects;
+module.exports = eqObjectsRecursive;
