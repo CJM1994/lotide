@@ -1,6 +1,6 @@
 {
   "name": "@cjm1994/lotide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A clone of the lodash js library to practice creating various types of functions in js as well as using testing tools and npm.",
   "main": "index.js",
   "directories": {
