@@ -1,7 +1,7 @@
 const assert = require('chai').assert;
 const eqArrays = require('../eqArrays');
 
-describe('EQ ARRAYS TEST', () => {
+describe('EQ ARRAYS', () => {
   it('Two empty arrays should return true', () => {
     assert.strictEqual(eqArrays([], []), true);
   })
