@@ -1,4 +1,3 @@
-
 const findKey = function (object, callback) {
   const keyArray = Object.keys(object);
   for (const key in object) {
